@@ -42,7 +42,14 @@ namespace ExpressionInterpreter.Logic
         /// </summary>
         public double Calculate()
         {
-            throw new NotImplementedException();
+
+            double result=0;
+            if(Op=='+')
+            {
+
+                result = OperandLeft + OperandRight;
+            }
+            return result;
         }
 
         /// <summary>
