@@ -49,6 +49,10 @@ namespace ExpressionInterpreter.Logic
 
                 result = OperandLeft + OperandRight;
             }
+            else if(Op == '-')
+            {
+                result = OperandLeft - OperandRight;
+            }
             return result;
         }
 
