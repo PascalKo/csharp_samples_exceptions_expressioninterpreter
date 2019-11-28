@@ -53,6 +53,19 @@ namespace ExpressionInterpreter.Logic
             {
                 result = OperandLeft - OperandRight;
             }
+            else if (Op == '+')
+            {
+                result = OperandLeft * OperandRight;
+            }
+            else if (Op == '/')
+            {
+                if(OperandRight==0)
+                {
+                    throw new DivideByZeroException("Division durch null!!");
+                }
+
+                result = OperandLeft / OperandRight;
+            }
             return result;
         }
 
